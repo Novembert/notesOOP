@@ -20,7 +20,7 @@ class Display {
         }
         this.renderNotes = () => {
             this.clearMain()
-            _arrayOfNotes.forEach(addKeyAndAppendNote(element, key))
+            _arrayOfNotes.forEach((element, key) => this.addKeyAndAppendNote(element, key))
         }
     }
 
